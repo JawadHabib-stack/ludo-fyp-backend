@@ -1,0 +1,21 @@
+{
+  "name": "ludo-fyp-backend",
+  "version": "1.0.0",
+  "description": "Backend for the Online Multiplayer Ludo mobile game (FYP): Node.js + Express + Socket.IO + MySQL",
+  "main": "src/server.js",
+  "private": true,
+  "scripts": {
+    "start": "node --env-file=.env src/server.js",
+    "dev": "node --watch --env-file=.env src/server.js",
+    "db:reset": "node --env-file=.env database/reset.js",
+    "test": "node --test"
+  },
+  "dependencies": {
+    "bcryptjs": "^3.0.3",
+    "cors": "^2.8.6",
+    "express": "^5.3.0",
+    "jsonwebtoken": "^9.0.3",
+    "mysql2": "^3.24.6",
+    "socket.io": "^4.8.4"
+  }
+}
